@@ -68,6 +68,7 @@ body {
 }
 
 img { max-width: 100%; display: block; }
+svg { max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
@@ -498,7 +499,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: clamp(2rem, 8vw, 3.75rem);
   font-weight: 800;
   line-height: 1.1;
   color: var(--white);
@@ -1567,10 +1568,20 @@ a.contact-detail-value:hover { color: var(--cyan); }
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
 
-  .hero-visual { height: 320px; }
-  .mockup-maps { max-width: 280px; }
-  .metric-card { display: none; }
-  .metric-card--calls { display: flex; position: relative; left: auto; top: auto; bottom: auto; right: auto; width: 100%; }
+  .hero-visual { height: auto; }
+  .mockup-maps { max-width: 100%; width: 100%; position: relative; margin-bottom: 20px; }
+  .metric-card { 
+    display: flex; 
+    position: relative; 
+    left: auto !important; 
+    top: auto !important; 
+    bottom: auto !important; 
+    right: auto !important; 
+    width: 100%; 
+    margin-bottom: 12px;
+    animation: none;
+    transform: none;
+  }
 
   .hero-visual {
     height: auto;
@@ -1578,6 +1589,7 @@ a.contact-detail-value:hover { color: var(--cyan); }
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    width: 100%;
   }
 
   .mockup-maps {
@@ -1603,4 +1615,6 @@ a.contact-detail-value:hover { color: var(--cyan); }
   .footer-bottom { flex-direction: column; text-align: center; }
 
   .about-badge { right: 0; }
+  
+  .trust-divider { display: none; }
 }
