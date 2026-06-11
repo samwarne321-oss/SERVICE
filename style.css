@@ -1604,7 +1604,8 @@ a.contact-detail-value:hover { color: var(--cyan); }
 
   .about-pillars { grid-template-columns: 1fr; }
 
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: 1fr; }
+  .stat-card { padding: 24px 16px; }
 
   .services-grid { grid-template-columns: 1fr; }
 
